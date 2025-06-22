@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30vh;
+}
+
 body {
   background: linear-gradient(135deg, #f7cac9 0%, #fbeee6 100%);
   font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
@@ -47,7 +52,7 @@ h1 {
   color: #e26a6a;
   margin-bottom: 18px;
   margin-top: 10px;
-  font-size: 3.8em;
+  font-size: 3.2em;
   letter-spacing: 4px;
   font-weight: 900;
   background: linear-gradient(90deg, #e26a6a 10%, #92a8d1 90%);
@@ -128,6 +133,6 @@ h1 {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }
