@@ -42,7 +42,6 @@ body {
   max-height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  border-radius: 0 0 0 0;
   display: block;
   box-shadow: 0 2px 12px #e26a6a22;
 }
@@ -64,7 +63,6 @@ h1 {
 
 .desc-block {
   background: #fff7fa;
-  border-radius: 14px;
   box-shadow: 0 2px 8px #e26a6a11;
   padding: 18px 18px 12px 18px;
   margin: 0 0 18px 0;
@@ -88,7 +86,6 @@ h1 {
   color: #fff;
   font-weight: 700;
   padding: 8px 20px;
-  border-radius: 8px;
   text-decoration: none;
   box-shadow: 0 2px 8px #e26a6a22;
   transition: background 0.2s;
@@ -97,6 +94,7 @@ h1 {
 
 .desc-block a:hover {
   background: #92a8d1;
+  text-decoration: underline;
 }
 
 #Comments {
@@ -129,7 +127,6 @@ h1 {
     margin-right: -2vw;
     margin-top: -12px;
     max-height: 100%;
-    border-radius: 0 0 0 0;
   }
 
   h1 {
