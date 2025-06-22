@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>捞女游戏留言板</title>
+    <link rel="shortcut icon" href="logo.avif" type="image/avif">
+    <meta property="og:title" content="捞女游戏留言板" />
+    <meta property="og:description" content="欢迎在捞女游戏留言板畅所欲言，分享你的看法和故事！" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ln.saop.cc/" />
+    <meta property="og:image" content="https://ln.saop.cc/ln.avif" />
+    <script src="https://registry.npmmirror.com/instant.page/latest/files/instantpage.js" type="module" defer></script>
+    <link fetchpriority="low" href="https://registry.npmmirror.com/artalk/latest/files/dist/Artalk.css"
+        rel="stylesheet">
+    <link fetchpriority="low" href="https://registry.npmmirror.com/lightgallery/latest/files/css/lightgallery.css"
+        rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f7cac9 0%, #fbeee6 100%);
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 40px auto 0 auto;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 22px;
+            box-shadow: 0 8px 32px rgba(226, 106, 106, 0.10), 0 1.5px 4px rgba(146, 168, 209, 0.08);
+            padding-top: 0;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 36px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container:before {
+            display: none;
+        }
+
+        .header-img {
+            width: calc(100% + 64px);
+            margin-left: -32px;
+            margin-right: -32px;
+            margin-top: -22px;
+            left: 0;
+            right: 0;
+            position: relative;
+            transform: none;
+            max-width: none;
+            height: auto;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+            border-radius: 0 0 0 0;
+            display: block;
+            box-shadow: 0 2px 12px #e26a6a22;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e26a6a;
+            margin-bottom: 18px;
+            margin-top: 10px;
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #e26a6a 10%, #92a8d1 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 8px #e26a6a11;
+        }
+
+        .desc-block {
+            background: #fff7fa;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px #e26a6a11;
+            padding: 18px 18px 12px 18px;
+            margin: 0 0 18px 0;
+            border-left: 5px solid #e26a6a;
+        }
+
+        .desc-block h2 {
+            color: #e26a6a;
+            font-size: 1.25rem;
+            margin: 0 0 8px 0;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .desc-block ul {
+            margin-left: 20px;
+        }
+
+        .desc-block a {
+            background: #e26a6a;
+            color: #fff;
+            font-weight: 700;
+            padding: 8px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 2px 8px #e26a6a22;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+
+        .desc-block a:hover {
+            background: #92a8d1;
+        }
+
+        #Comments {
+            margin-top: 24px;
+            animation: fadeInUp 1s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            background: #f7cac9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e26a6a88;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                padding-left: 2vw;
+                padding-right: 2vw;
+                padding-bottom: 12px;
+            }
+
+            .header-img {
+                width: calc(100% + 4vw);
+                margin-left: -2vw;
+                margin-right: -2vw;
+                margin-top: -12px;
+                max-height: 120px;
+                border-radius: 0 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <img class="header-img" src="ln.avif" alt="banner">
+        <h1>捞女游戏留言板</h1>
+        <div class="desc-block animate__animated animate__fadeInUp">
+            <h2 style="font-size:1.3rem;margin:18px 0 10px 0;font-weight:700;letter-spacing:1px;">情感反诈模拟器
+            </h2>
+            <p style="color:#444;line-height:1.8;font-size:1.08rem;">
+                《情感反诈模拟器》是一款以真实案例为蓝本的互动剧情游戏，带你体验“杀猪盘”骗局的全过程。你将扮演受害者，面对虚假情感攻势、甜言蜜语与层层诱惑，做出每一个关键选择。游戏旨在提升大众对情感诈骗的警觉，帮助玩家识别套路、守护财产与情感安全。
+            </p>
+            <ul style="color:#666;font-size:1rem;line-height:1.7;margin:10px 0 0 18px;padding:0;">
+                <li>真实还原诈骗流程，沉浸式体验受害者视角</li>
+                <li>多结局分支，选择决定命运</li>
+                <li>科普反诈知识，防骗技巧随剧情穿插</li>
+                <li>支持留言交流，分享你的故事与见解</li>
+            </ul>
+            <div style="margin:18px 0 0 0;">
+                <a href="https://store.steampowered.com/app/3350200" target="_blank"
+                    style="display:inline-block;background:#171a21;color:#fff;font-weight:700;padding:10px 22px;border-radius:8px;text-decoration:none;box-shadow:0 2px 8px #171a2122;transition:background 0.2s;">在
+                    Steam 查看</a>
+            </div>
+        </div>
+        <div id="Comments"></div>
+        <p style="text-align: center;">访问：<span id="busuanzi_value_site_pv">null</span>，访客：<span
+                id="busuanzi_value_site_uv">null</span></p>
+    </div>
+    <script fetchpriority="low"
+        src="https://registry.npmmirror.com/lightgallery/latest/files/lightgallery.min.js"></script>
+    <script fetchpriority="low" src="https://registry.npmmirror.com/artalk/latest/files/dist/Artalk.js"></script>
+    <script fetchpriority="low"
+        src="https://registry.npmmirror.com/@artalk/plugin-lightbox/latest/files/dist/artalk-plugin-lightbox.js"></script>
+    <script>
+        Artalk.init({
+            el: '#Comments',
+            pageKey: 'https://ln.saop.cc',
+            server: 'https://artalk.saop.cc',
+            site: '捞女游戏留言板',
+        });
+    </script>
+    <script async fetchpriority="low"
+        src="https://registry.npmmirror.com/js-asuna/latest/files/js/bsz.pure.mini.js"></script>
+</body>
+
+</html>
